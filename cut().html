@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 'aaple', 'romgp', 'asd', '56'];
+
+    function cut(start, end) {
+        let tempArr = []
+        if (start < end) {
+            for (let i = 0; start <= end; start++) {
+                tempArr[i] =  arr[start]
+                i++
+            }
+        } else if (start > end) {
+            for (let i = 0; start >= end; end++) {
+                tempArr[i] = arr[end]
+                i++
+            }
+        }
+        console.log(tempArr)
+        return tempArr
+    }
+    arr = cut(1,2)
+    document.write(arr + "")
+
+</script>
+</body>
+</html>

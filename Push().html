@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="Push()"> Push</button>
+<p id="show"></p>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6]
+    function Push(i) {
+        arr[arr.length] = i;
+        document.getElementById("show").innerHTML = arr
+    }
+</script>
+</body>
+</html>
